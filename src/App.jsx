@@ -1,4 +1,6 @@
 import "./App.css";
+import eyeimg from "/src/img/eyes.png";
+import fishimg from "/src/img/fish.png";
 import wicclogo from "/src/img/wicc_logo.png";
 import githublogo from "/src/img/github.svg";
 import instalogo from "/src/img/instagram.svg";
@@ -14,9 +16,9 @@ function App() {
     <>
       <section className="h-screen w-[80%] flex mx-auto items-center">
         <div className="h-auto flex flex-row sm:flex-col-reverse space-x-10 sm:space-x-0 ">
-          <div className="flex flex-col justify-center space-y-5 text-base">
+          <div className="flex flex-col justify-center space-y-5 text-base w-full">
             {/* TODO 1: Edit the content of these tags!*/}
-            <h1>Hi! I'm ______</h1>
+            <h1>Hi! I'm Sabrina</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum ac ante eget arcu ultrices eleifend. Curabitur
@@ -51,18 +53,18 @@ function App() {
           <div className="flex justify-center ">
             {/* TODO 3: Change this to a custom image! */}
             <img
-              src={wicclogo}
-              alt="WICC Logo"
+              src={fishimg}
+              alt="Main Image"
               className="object-contain sm:p-10"
             />
           </div>
         </div>
       </section>
-      <section className="bg-[#9CE2D3] min-h-screen w-screen flex justify-center rounded-t-3xl p-10 ">
+      <section className="bg-[#848A9E] min-h-screen w-screen flex justify-center rounded-t-3xl p-10 ">
         <div className="flex flex-col items-center space-y-5 w-full">
-          <div className="flex text-3xl font-medium">Experience</div>
+          <div className="text-white flex text-3xl font-medium">Experience</div>
           {/* TODO 4: Add your work experience here by editing the json files in src/data/experiences.json */}
-          <div className="text-base">
+          <div className="text-white text-base">
             Here is a quick summary of my most recent experiences:
           </div>
           <Experience className="w-full" />
